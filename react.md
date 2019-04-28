@@ -330,6 +330,17 @@ class MyComponent extends Component {
     this.input.focus()
   }
 }
+
+
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.myRef = React.createRef();
+  }
+  render() {
+    return <div ref={this.myRef} />;
+  }
+}
 ```
 {: data-line="4,9"}
 
